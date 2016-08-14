@@ -62,7 +62,7 @@ class TasksController < ApplicationController
   end
 
   def sort_tasks(tasks)
-    sort =  params['sort'] || session['sort'] || "asc"
+    sort = params['sort'] || session['sort'] || "ASC"
     if sort == "priority"
       tasks = tasks.order("priority ASC")
     elsif sort == "category"

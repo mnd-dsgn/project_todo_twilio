@@ -7,7 +7,7 @@
   <%= "Priority: #{@task.priority}" %><br />
 </p>
 
-<%= link_to "I don't wanna see this task ever again!",  task_path(@task), method: :delete, data: {confirm: "Delete?"} %>
+<%= link_to "I don't wanna see this task ever again!",  @task, method: :delete, data: {confirm: "Delete?"} %>
 
 <%= link_to "Edit this Task.", edit_task_path(@task) %><br>
 

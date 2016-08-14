@@ -1,6 +1,6 @@
 <span style="color: red"><%= task.errors.full_messages.join(", ") %></span>
 
-<%= form_for task do |t|  %>
+  <%= form_for task do |t|  %>
   <%= t.label "Description." %>
   <%= t.text_field :description, :value => task.description %><br />
   <%= t.label "Due date." %>
@@ -10,4 +10,5 @@
   <%= t.label "Priority." %>
   <%= t.text_field :priority,  :value => task.priority %><br />
   <%= t.submit %>
+  
 <% end %>
